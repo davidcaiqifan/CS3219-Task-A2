@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:  
+      context: ./server
+    ports:
+      - "3000:3000"
+  reverseproxy:
+    build:
+      context: ./reverse-proxy
+    ports:
+      - "80:80"
+    
+    
