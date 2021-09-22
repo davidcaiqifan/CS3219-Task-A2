@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: task-a2-site
-        image: test_frontend
+        image: taska2-frontend
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
