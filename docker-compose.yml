@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   taska2-frontend:
-    container_name: taska2-frontend
     build:  
       context: ./server
+    image: taska2-frontend
     ports:
       - "3000:3000"
     
